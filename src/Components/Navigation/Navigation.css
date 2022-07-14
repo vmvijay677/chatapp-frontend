@@ -1,0 +1,67 @@
+.app-logo {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.app-logo>img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.app-logo>p>a {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.navbars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.navbars>p>a {
+    color: #0427ED;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username-image {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid lightgray;
+}
+
+.username {
+    font-weight: 500;
+    color: #0427ED;
+    margin-top: 12px;
+}
+
+.navbars>p {
+    color: #0427ED;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 15px;
+    cursor: pointer;
+}

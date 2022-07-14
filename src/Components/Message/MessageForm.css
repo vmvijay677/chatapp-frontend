@@ -1,0 +1,115 @@
+.message-container {
+    margin-top: 5px;
+}
+
+.message-input-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    gap: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#send-button {
+    background: #0427ED;
+    color: white;
+}
+
+.message-input-container>div>form>input {
+    padding: 7px 15px;
+    border: 1px solid skyblue;
+    outline: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 950px;
+}
+
+.messages-output {
+    height: 80vh;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.message-form-data {
+    text-align: center;
+    width: 10%;
+    background-color: lightgreen;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-details {
+    background: rgb(211, 240, 248);
+    width: 35%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 8px 6px 1px 8px;
+    border-radius: 5px;
+}
+
+.message-pic-name {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 5px;
+    gap: 6px;
+}
+
+.message-sender {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.message-content {
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+.message-timestamp {
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.other-message-details {
+    background: rgb(253, 253, 176);
+    width: 35%;
+    margin-bottom: 10px;
+    padding: 8px 6px 1px 8px;
+    border-radius: 5px;
+    display: block;
+    margin-left: 64%;
+    margin-right: auto;
+}
+
+.group-alert-info {
+    text-align: center;
+    width: 27%;
+    background-color: lightgreen;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.messages-output::-webkit-scrollbar {
+    display: none;
+}
+
+.messages-output {
+    -ms-overflow-style: none;
+}

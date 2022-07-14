@@ -1,0 +1,16 @@
+.login-alert-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login-alert-message {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.login-alert-image {
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
+}

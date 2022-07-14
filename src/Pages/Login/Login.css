@@ -1,0 +1,58 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login-form>h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.login-form>form>label {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.login-form>form>input {
+    width: 400px;
+    height: 40px;
+    padding: 6px 12px;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px
+}
+
+.login-form>p {
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.login-form>p>a {
+    text-decoration: none;
+}
+
+.login-image {
+    width: 475px;
+    height: 550px;
+    object-fit: cover;
+}
+
+#error-message {
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+    border: 2px solid red;
+    text-align: center;
+    width: 53%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 6px;
+}

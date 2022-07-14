@@ -1,0 +1,35 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home-content-1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.home-content-2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#getstarted-button {
+    margin-top: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.home-image {
+    width: 475px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.home-contents>a {
+    text-decoration: none;
+}

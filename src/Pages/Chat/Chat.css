@@ -1,0 +1,16 @@
+.chat-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+}
+
+.side-component {
+    width: 24%;
+    height: 500px;
+}
+
+.message-component {
+    width: 74%;
+    height: 500px;
+}
