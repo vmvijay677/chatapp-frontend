@@ -6,6 +6,7 @@ import "./Login.css";
 import { useLoginUserMutation } from "../../Services/appApi";
 import { useContext } from 'react';
 import { AppContext } from '../../Context/appContext';
+import Slide from 'react-reveal/Slide';
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -36,27 +37,31 @@ const Login = () => {
     return (
         <div className='login-container'>
             <div className='login-form'>
-                <h4>Login with your account!</h4>
-                {error ? <p id="error-message">{error.data.message}</p> : ""}
-                <form onSubmit={handleLogin}>
-                    <label>Email</label><br />
-                    <input type='email' placeholder='Enter your email' onChange={(e) => setEmail(e.target.value)} value={email} required /><br />
+                <Slide left>
+                    <h4>Login with your account!</h4>
+                    {error ? <p id="error-message">{error.data.message}</p> : ""}
+                    <form onSubmit={handleLogin}>
+                        <label>Email</label><br />
+                        <input type='email' placeholder='Enter your email' onChange={(e) => setEmail(e.target.value)} value={email} required /><br />
 
-                    <label>Password</label><br />
-                    <input type='Password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} value={password} required ></input><br />
+                        <label>Password</label><br />
+                        <input type='Password' placeholder='Enter your password' onChange={(e) => setPassword(e.target.value)} value={password} required ></input><br />
 
-                    <div>
-                        <Button variant='contained' type='submit'>
-                            {isLoading ? "Loading..." : "Login"}
-                        </Button> &nbsp;
-                        <Button variant='contained' onClick={guestLogin}>Login as guest</Button>
-                    </div>
-                </form>
-                <p>Don't have an account? <Link to='/signup'>Signup</Link></p>
+                        <div>
+                            <Button variant='contained' type='submit'>
+                                {isLoading ? "Loading..." : "Login"}
+                            </Button> &nbsp;
+                            <Button variant='contained' onClick={guestLogin}>Login as guest</Button>
+                        </div>
+                    </form>
+                    <p>Don't have an account? <Link to='/signup'>Signup</Link></p>
+                </Slide>
             </div>
 
             <div>
-                <img className='login-image' src='https://img.freepik.com/premium-photo/group-friends-forming-huddle_107420-23115.jpg?w=2000' alt='login-page'></img>
+                <Slide right>
+                    <img className='login-image' src='https://img.freepik.com/premium-photo/group-friends-forming-huddle_107420-23115.jpg?w=2000' alt='login-page'></img>
+                </Slide>
             </div>
         </div>
     )

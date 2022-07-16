@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import LoginAlert from './Pages/LoginAlert/LoginAlert';
 import { useState } from 'react';
 import { AppContext, socket } from "./Context/appContext";
+import Slide from 'react-reveal/Slide';
 
 function App() {
   const [rooms, setRooms] = useState([]);
@@ -24,7 +25,9 @@ function App() {
     <div className="App">
       <AppContext.Provider value={{ socket, currentRoom, setCurrentRoom, members, setMembers, messages, setMessages, privateMemberMsg, setPrivateMemberMsg, rooms, setRooms, newMessages, setNewMessages }}>
         <BrowserRouter>
-          <Navigation />
+          <Slide top>
+            <Navigation />
+          </Slide>
 
           <Switch>
             <Route exact path="/">
