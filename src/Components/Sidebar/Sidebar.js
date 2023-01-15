@@ -44,7 +44,7 @@ const Sidebar = () => {
     });
 
     function getRooms() {
-        fetch("https://mychatappbyvignesh.herokuapp.com/rooms")
+        fetch("https://chatapp-backend-five.vercel.app/rooms")
             .then((res) => res.json())
             .then((data) => setRooms(data));
     };
